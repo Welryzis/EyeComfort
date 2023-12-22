@@ -10,7 +10,7 @@ def main_menu():
     clear()
 
     put_table([
-        ["Eye", "Comfort"],
+        ["", ""],
 
         [put_button("Start", focus_manager.start, disabled=focus_manager.running),
          put_button("Stop", focus_manager.stop, disabled=not focus_manager.running)],

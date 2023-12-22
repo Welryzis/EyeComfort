@@ -4,7 +4,7 @@ from .tgbot import send_message
 
 
 def timer(s):
-    time.sleep(s)
+    time.sleep(s * 60)
     send_message()
 
 
