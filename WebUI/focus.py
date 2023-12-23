@@ -1,7 +1,7 @@
 from pywebio.input import *
 from pywebio.output import *
 from .utils import *
-from .processes import TimerManager
+from processes import TimerManager
 
 
 class FocusManager:

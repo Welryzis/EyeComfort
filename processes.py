@@ -1,13 +1,19 @@
+import time
 from multiprocessing import Process
-from .utils import timer
+from tgbot import send_message
 
 
 class TimerManager:
     def __init__(self):
         self.processes = []
 
+    @staticmethod
+    def timer(s):
+        time.sleep(s * 60)
+        send_message()
+
     def create_timer(self, sec: int):
-        process = Process(target=timer, args=(sec,), name="timer", daemon=True)
+        process = Process(target=TimerManager.timer, args=(sec,), name="timer", daemon=True)
         process.start()
         self.processes.append(process)
         return True
