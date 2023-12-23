@@ -1,5 +1,8 @@
 # EyeComfort
-**EyeComfort**
+**EyeComfort** - is a utility to help your eyes. This project gives you the ability to set reminders for breaks while 
+working and much more. After launching the project, a website will be activated where you can configure 
+everything. The site can also be posted on free hosting (PythonAnyWhere and others) and 
+everything can be configured from a phone or other devices that have access to the Internet. 
 
 
 ## Table of Contents
@@ -13,12 +16,43 @@
 
 
 ## Installation
+Requirements: `Tested on Python == 3.11.6 and 3.10.6`
+
+Note: For Linux use `python3`, `pip3` and `.sh`
+
+Clone repository
+```bash
+git clone https://github.com/Welryzis/EyeComfort
+```
+
+Change folder
+```bash
+cd EyeComfort
+```
+
+Fill `config.py` file
+```python
+TG_BOT_TOKEN = "TelegramBotToken"
+TG_CHAT_ID = "Your Telegram chat id"
+TG_MESSAGE = "Time ;)"
+
+FLASK_SECRET_KEY = "JustRandomSuperSecretKeyForWebUI228"
+```
+
+Start `main.py` file
+
+***In order for the bot to send you messages, you need to enter /start in the chat with the Telegram bot before starting the project.***
+```bash
+python main.py
+```
 
 
 ## Usage
+![screen_1](data/screen_1.png)
 
 
 ## Features
+- Easy-to-use
 
 
 ## Contributing
